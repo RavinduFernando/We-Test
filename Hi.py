@@ -22,6 +22,13 @@ for i in range(120):
     pen.forward(i * 3)         # Increase step size
     pen.left(91)               # Slightly off 90° for spiral effect
 
+#draw message
+pen.penup()
+pen.goto(-50, -100)
+pen.pendown()
+pen.color("white")
+pen.write("Hello, World!", font=("Arial", 24, "bold"))  
+    
 
 Delay = 2000  # Delay in milliseconds
 turtle.done()  
